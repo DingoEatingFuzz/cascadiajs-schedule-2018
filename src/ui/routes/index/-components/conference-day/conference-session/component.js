@@ -1,5 +1,6 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
+import { equal } from '@ember/object/computed';
 import ENV from 'emberfest/config/environment';
 import moment from 'emberfest/src/libs/moment';
 
@@ -7,15 +8,11 @@ const TIME_FORMAT = 'h:mma';
 
 export default Component.extend({
   classNames: ['session'],
-  classNameBindings: ['isBreak', 'isExpanded', 'isNow', 'isPast'],
+  classNameBindings: ['isBreak', 'isExpanded', 'isBreak', 'isNow', 'isPast'],
 
   now: moment().format(),
   isExpanded: false,
   session: null,
-
-  isBreak: computed('session.name', function() {
-    return ['Lunch', 'Snack Break'].includes(this.get('session.name'));
-  }),
 
   isNow: computed('now', 'session.{start,end}', function() {
     return moment(this.now).isBetween(
@@ -25,6 +22,8 @@ export default Component.extend({
       '[)'
     );
   }),
+
+  isBreak: equal('session.type', 'intermission'),
 
   isPast: computed('now', 'session.end', function() {
     return moment(this.now).isSameOrAfter(this.get('session.end'));
