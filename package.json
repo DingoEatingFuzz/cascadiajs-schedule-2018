@@ -1,5 +1,5 @@
 {
-  "name": "emberfest",
+  "name": "cascadiajs",
   "version": "0.0.0",
   "private": true,
   "description": "Mobile-friendly PWA for viewing the 2018 EmberFest schedule",
@@ -9,7 +9,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/201-created/emberfest-schedule-2018",
+  "repository": "https://github.com/dingoeatingfuzz/cascadiajs-schedule-2018",
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js app config lib server tests",

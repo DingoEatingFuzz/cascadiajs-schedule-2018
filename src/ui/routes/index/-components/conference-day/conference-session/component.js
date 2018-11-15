@@ -1,8 +1,8 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
 import { equal } from '@ember/object/computed';
-import ENV from 'emberfest/config/environment';
-import moment from 'emberfest/src/libs/moment';
+import ENV from 'cascadiajs/config/environment';
+import moment from 'cascadiajs/src/libs/moment';
 
 const TIME_FORMAT = 'h:mma';
 

@@ -12,7 +12,7 @@ module.exports = function(defaults) {
       include: ['assets/**/*', 'icons/**/*', '*.webmanifest'],
     },
     'ember-inline-css': {
-      filter: ['/assets/vendor.css', '/assets/emberfest.css'],
+      filter: ['/assets/vendor.css', '/assets/cascadiajs.css'],
     },
     'ember-service-worker': {
       registrationStrategy: 'inline',

@@ -1,8 +1,8 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
-import Schedule from 'emberfest/src/libs/cascadiajs-schedule';
-import SmoothScroll from 'emberfest/src/libs/smoothscroll';
-import moment from 'emberfest/src/libs/moment';
+import Schedule from 'cascadiajs/src/libs/cascadiajs-schedule';
+import SmoothScroll from 'cascadiajs/src/libs/smoothscroll';
+import moment from 'cascadiajs/src/libs/moment';
 
 export default Route.extend({
   fastboot: service(),

@@ -2,8 +2,8 @@ import Controller from '@ember/controller';
 import { alias } from '@ember/object/computed';
 import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
-import ENV from 'emberfest/config/environment';
-import moment from 'emberfest/src/libs/moment';
+import ENV from 'cascadiajs/config/environment';
+import moment from 'cascadiajs/src/libs/moment';
 
 export default Controller.extend({
   fastboot: service(),
