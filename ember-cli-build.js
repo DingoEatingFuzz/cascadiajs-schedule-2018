@@ -1,42 +1,33 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const broccoliAssetRevDefaults = require( 'broccoli-asset-rev/lib/default-options' );
+const broccoliAssetRevDefaults = require('broccoli-asset-rev/lib/default-options');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     babel: {
-      loose: true
+      loose: true,
     },
     'asset-cache': {
-      include: [
-        'assets/**/*',
-        'icons/**/*',
-        '*.webmanifest'
-      ]
+      include: ['assets/**/*', 'icons/**/*', '*.webmanifest'],
     },
     'ember-inline-css': {
-      filter: [
-        '/assets/vendor.css',
-        '/assets/emberfest.css'
-      ]
+      filter: ['/assets/vendor.css', '/assets/emberfest.css'],
     },
     'ember-service-worker': {
       registrationStrategy: 'inline',
-      versionStrategy: 'project-revision'
+      versionStrategy: 'project-revision',
     },
     fingerprint: {
       extensions: broccoliAssetRevDefaults.extensions.concat(['webmanifest']),
-      prepend: 'https://dehqs5in8mnb0.cloudfront.net/'
+      prepend: 'https://cascadiajs.app/',
     },
     prember: {
-      urls: [
-        '/'
-      ]
+      urls: ['/'],
     },
     vendorFiles: {
-      'jquery.js': null
-    }
+      'jquery.js': null,
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated

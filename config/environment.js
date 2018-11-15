@@ -7,7 +7,7 @@ module.exports = function(environment) {
         EMBER_RESOLVER_MODULE_UNIFICATION: true,
       },
     },
-    modulePrefix: 'emberfest',
+    modulePrefix: 'cascadiajs',
     environment,
     rootURL: '/',
     locationType: 'auto',

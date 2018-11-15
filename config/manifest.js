@@ -9,7 +9,7 @@ module.exports = function(/* environment, appConfig */) {
     name: 'CascadiaJS',
     short_name: 'CascadiaJS',
     description: 'CascadiaJS 2018 Schedule',
-    start_url: 'https://2018.cascadiajs.com/',
+    start_url: 'https://cascadiajs.app/',
     display: 'standalone',
     background_color: '#149e51',
     theme_color: '#149e51',
