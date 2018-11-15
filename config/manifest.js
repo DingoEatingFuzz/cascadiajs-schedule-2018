@@ -6,38 +6,38 @@ module.exports = function(/* environment, appConfig */) {
   // supported properties
 
   return {
-    name: "EmberFest",
-    short_name: "EmberFest",
-    description: "EmberFest 2018 Schedule",
-    start_url: "https://emberfest.201-created.com/",
-    display: "standalone",
-    background_color: "#f2f2f1",
-    theme_color: "#e15d44",
+    name: 'CascadiaJS',
+    short_name: 'CascadiaJS',
+    description: 'CascadiaJS 2018 Schedule',
+    start_url: 'https://cascadiajs.app/',
+    display: 'standalone',
+    background_color: '#149e51',
+    theme_color: '#149e51',
     icons: [
       {
-        src: '/icons/192.png',
-        sizes: '192x192'
+        src: '/icons/c192.png',
+        sizes: '192x192',
       },
       {
-        src: '/icons/512.png',
-        sizes: '512x512'
+        src: '/icons/c512.png',
+        sizes: '512x512',
       },
       {
-        src: '/icons/280.png',
+        src: '/icons/c280.png',
         sizes: '280x280',
-        targets: ['apple']  // non-standard property
+        targets: ['apple'], // non-standard property
       },
       {
-        src: '/icons/favicon.png',
-        sizes: '32x32',
-        targets: ['favicon']
-      }
+        src: '/icons/c192.png',
+        sizes: '192x192',
+        targets: ['favicon'],
+      },
     ],
     apple: {
-      statusBarStyle: 'black-translucent'
+      statusBarStyle: 'black-translucent',
     },
     ms: {
-      tileColor: '#f2f2f1'
-    }
+      tileColor: '#149e51',
+    },
   };
-}
+};
