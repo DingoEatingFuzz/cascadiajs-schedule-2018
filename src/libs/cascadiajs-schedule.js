@@ -77,21 +77,21 @@ export default [
         start: '12:45',
       },
       {
-        name: 'Shannon Foster',
-        talk: 'Down the rabbit hole with WebVR',
-        blurb:
-          "The evolution of user interactivity on the web has birthed the growing advancements of web innovation and creativity. Pushing developers and designers to look for unique ways to engage and immerse our users. From utilizing AR in online retail to show what products would physically look like either in a living space or on the users themselves, to banking in VR where low-poly animations are used to teach money management. Let's explore available VR tools, from A-Frame and beyond, and different use cases for developing in VR for the web.",
-        avatar: '/speakers/shannon-foster.jpg',
-        twitter: 'SheCanTech',
-        start: '14:10',
-      },
-      {
         name: 'Tre Ammatuna',
         talk: 'Building a culture of learning and growth',
         blurb:
           'From junior dev to C-level executive, continued education and growth are keys to success in today rapidly advancing tech industry. Everyone benefits from a culture built around these ideas that help you and your team not only keep up with the changes, but also share knowledge already gained.',
         avatar: '/speakers/tre.jpg',
         twitter: 'tretuna',
+        start: '14:10',
+      },
+      {
+        name: 'Shannon Foster',
+        talk: 'Down the rabbit hole with WebVR',
+        blurb:
+          "The evolution of user interactivity on the web has birthed the growing advancements of web innovation and creativity. Pushing developers and designers to look for unique ways to engage and immerse our users. From utilizing AR in online retail to show what products would physically look like either in a living space or on the users themselves, to banking in VR where low-poly animations are used to teach money management. Let's explore available VR tools, from A-Frame and beyond, and different use cases for developing in VR for the web.",
+        avatar: '/speakers/shannon-foster.jpg',
+        twitter: 'SheCanTech',
         start: '14:40',
       },
       {
